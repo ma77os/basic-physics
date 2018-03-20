@@ -1,35 +1,44 @@
 {
-    "name": "@ma77os/basic-physics",
-    "version": "1.0.0",
-    "description": "Basic 2D motion physics - vectors, forces, springs, oscillations, steering behaviours, kinematics",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-      "physics",
-      "math",
-      "motion",
-      "vector",
-      "force",
-      "easing",
-      "velocity",
-      "acceleration",
-      "oscillation",
-      "spring",
-      "forward kinematics",
-      "inverse kinematics",
-      "steering behaviours"
-    ],
-    "author": "André Mattos <andremattos@gmail.com> (https://github.com/ma77os)",
-    "license": "ISC",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/ma77os/basic-physics.git"
-    },
-    "bugs": {
-      "url": "https://github.com/ma77os/basic-physics/issues"
-    },
-    "homepage": "https://github.com/ma77os/basic-physics#readme"
+  "name": "@ma77os/basic-physics",
+  "version": "1.0.0",
+  "description": "Basic 2D motion physics - vectors, forces, springs, oscillations, steering behaviours, kinematics",
+  "main": "index.js",
+  "scripts": {
+    "dev": "budo ./src/index.js --live -- -t babelify",
+    "build": "browserify ./src/index.js -t babelify | uglifyjs -cm > ./build/basic-physics.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "physics",
+    "math",
+    "motion",
+    "vector",
+    "force",
+    "easing",
+    "velocity",
+    "acceleration",
+    "oscillation",
+    "spring",
+    "forward kinematics",
+    "inverse kinematics",
+    "steering behaviours"
+  ],
+  "author": "André Mattos <andremattos@gmail.com> (https://github.com/ma77os)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma77os/basic-physics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ma77os/basic-physics/issues"
+  },
+  "homepage": "https://github.com/ma77os/basic-physics#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "budo": "^11.2.0",
+    "uglify-js": "^3.3.16"
   }
-  
+}
