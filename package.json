@@ -4,8 +4,7 @@
   "description": "Basic 2D motion physics - vectors, forces, springs, oscillations, steering behaviours, kinematics",
   "main": "index.js",
   "scripts": {
-    "dev": "budo ./src/index.js --live -- -t babelify",
-    "build": "browserify ./src/index.js -t babelify | uglifyjs -cm > ./build/basic-physics.js",
+    "demo-spring": "budo demos/spring.js --live -- -t [ babelify --presets [ env ] ]",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
