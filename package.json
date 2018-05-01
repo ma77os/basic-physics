@@ -4,7 +4,8 @@
   "description": "Basic 2D motion physics - vectors, forces, springs, oscillations, steering behaviours, kinematics",
   "main": "build/basic-physics.js",
   "scripts": {
-    "demo-spring": "budo demos/spring.js --live -- -t [ babelify --presets [ env ] ]",
+    "build": "rollup -c",
+    "demo-spring": "budo demos/spring.js --live",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -33,11 +34,15 @@
   },
   "homepage": "https://github.com/ma77os/basic-physics#readme",
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babelify": "^8.0.0",
-    "browserify": "^16.1.1",
     "budo": "^11.2.0",
-    "uglify-js": "^3.3.16"
+    "rollup": "^0.58.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0"
   }
 }
