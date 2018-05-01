@@ -1,6 +1,6 @@
 {
   "name": "@ma77os/basic-physics",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Basic 2D motion physics - vectors, forces, springs, oscillations, steering behaviours, kinematics",
   "main": "build/basic-physics.js",
   "scripts": {
