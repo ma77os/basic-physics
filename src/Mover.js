@@ -1,5 +1,5 @@
 import Vector from "./Vector"
-export default class Mover{
+class Mover{
   constructor(x = 0, y = 0, maxSpeed = 10){
     this.position = new Vector(x, y)
     this.acceleration = new Vector()
@@ -80,3 +80,4 @@ export default class Mover{
   set y (value) { this.position.y = value }
   get y () { return this.position.y }
 }
+module.exports = Mover

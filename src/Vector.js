@@ -1,4 +1,4 @@
-export default class Vector{
+class Vector{
     constructor(x = 0, y = 0){
       this.x = x
       this.y = y
@@ -76,4 +76,4 @@ export default class Vector{
       return new Vector(v1.x, v1.y).div(n)
     }
   }
-  
+  module.exports = Vector
