@@ -2,7 +2,7 @@
   "name": "@ma77os/basic-physics",
   "version": "1.0.0",
   "description": "Basic 2D motion physics - vectors, forces, springs, oscillations, steering behaviours, kinematics",
-  "main": "index.js",
+  "main": "build/basic-physics.js",
   "scripts": {
     "demo-spring": "budo demos/spring.js --live -- -t [ babelify --presets [ env ] ]",
     "test": "echo \"Error: no test specified\" && exit 1"
